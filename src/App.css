@@ -1,0 +1,163 @@
+:root {
+  --primary: #39ff14;
+  --secondary: #212121;
+  --appBackground:#000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  background-color:var(--appBackground);
+  height: 100vh;
+  overflow: auto;
+  padding: 1rem;
+}
+
+.App main {
+  width: 85vw;
+  margin: 0 auto;
+  height: 100vh
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  color: white;
+  height: 60px;
+  background-color: var(--secondary);
+}
+
+.navbar p {
+  font-size: 20px;
+  padding: 20px;
+  line-height: 60px;
+}
+
+.layout {
+  display: grid;
+  padding: 10px 0;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.votingBoothWrapper,
+.leaderBoardWrapper {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  background-color: var(--secondary);
+  padding: 1rem;
+}
+.leaderBoardWrapper{
+  margin-left: 1rem;
+}
+.allVotesWrapper {
+  margin-top: 1rem;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: var(--secondary);
+  padding: 1rem;
+}
+.votingLayout_div1{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.allVotesComp {
+  padding-bottom: 1rem;
+}
+
+.votingBoothComp .title,
+.leaderBoardComp .title,
+.allVotesComp .title {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 1rem ;
+}
+
+.formWrapper {
+  padding: 10px;
+}
+
+.userInputWrapper {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: flex-start;
+}
+
+select {
+
+  padding-left: 5px;
+}
+
+.userInput {
+  padding: 0.5rem 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.userInput:focus {
+  outline-color: var(--primary);
+}
+
+.submitBtn {
+  background-color: var(--primary);
+  border: none;
+  color: #000;
+  font-weight: 700;
+  border-radius: 5px;
+  margin-top: 5px;
+  width: 100%;
+  padding: 1rem;
+}
+
+.tableHead {
+  display: grid;
+  padding: 20px 0;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: var(--primary);
+  font-size: 20px;
+}
+
+.votingListItem {
+  display: grid;
+  align-items: center;
+  padding: 1px 0px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-size: 15px;
+  color: white;
+}
+
+.voteResultListItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0px 5px;
+}
+
+@media only screen and (max-width: 1290px) {
+  .App main {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .votingLayout_div1{
+    flex-direction: column;
+  }
+  .leaderBoardWrapper{
+    margin:0 ;
+    margin-top: 1rem;
+  }
+}
