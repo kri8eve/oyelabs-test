@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/oyelabs-test/static/css/main.48fdabf4.css",
+    "main.js": "/oyelabs-test/static/js/main.5b07dc31.js",
+    "index.html": "/oyelabs-test/index.html",
+    "main.48fdabf4.css.map": "/oyelabs-test/static/css/main.48fdabf4.css.map",
+    "main.5b07dc31.js.map": "/oyelabs-test/static/js/main.5b07dc31.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.48fdabf4.css",
+    "static/js/main.5b07dc31.js"
+  ]
+}
